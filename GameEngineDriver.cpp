@@ -102,8 +102,8 @@ void testMainGameLoop(){
     game->gameMap=map;
 
     // Initializing 2 players
-    Player* player1 = new Player("Aggro1", StrategyType::AggressivePlayer);
-    Player* player2 = new Player("Aggro2", StrategyType::AggressivePlayer);
+    Player* player1 = new Player("John", StrategyType::HumanPlayer);
+    Player* player2 = new Player("Jose", StrategyType::HumanPlayer);
     std::vector<Player*> playerList;
     playerList.push_back(player1);
     playerList.push_back(player2);

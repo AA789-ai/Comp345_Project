@@ -47,7 +47,7 @@ public:
 
     // Methods related to managing orders
     OrdersList& getOrdersList();                    // Get the player's list of orders
-    void issueOrder(const std::string& orderType, Territory* source, Territory* target, int* num, Player* targetPlayer, Deck* deck, GameEngine* gameEngine);  // Issue a new order of a specified type
+    void issueOrder(Deck* deck, GameEngine* gameEngine);  // Issue a new order of a specified type
 
 
 
@@ -65,7 +65,6 @@ public:
     PlayerStrategy* getStrategy();
     const StrategyType getStrategyType();
     void setPlayerStrategy(PlayerStrategy* strategy);
-
 
 private:
     // Attributes related to a Player's instance
